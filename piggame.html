@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pigGame</title>
+    <link href="pigGames.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section class="card">
+            <div class="half player-1 active">
+                <button class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+                <p class="won-1 won">🏆 You Won !🏆</p>
+                <h2 class="player-name player-name-1">
+                    player 1
+                </h2>
+                <h1 class="total-value value-1">0</h1>
+                <div class="ram-value">
+                    <p class="current-name">current</p>
+                    <p class="current-value current-value-1">0</p>
+                </div>
+
+            </div>
+            <div class="half player-2 ">
+                <p class="won-2 won">🏆 You Won !🏆</p>
+                <h2 class="player-name player-name-2">
+                    player 2
+                </h2>
+                <h1 class="total-value value-2">0</h1>
+                <div class="ram-value">
+                    <p class="current-name">current</p>
+                    <p class="current-value current-value-2">0</p>
+                </div>
+
+            </div>
+            <div class="middle">
+                <button class="btn block-btn restart-btn"><span class ="restart-icon" >🔃</span> play Again</button>
+                <!-- <img  class="img" src="me.jpg" alt="pic" /> -->
+                <div class="img hidden">0</div>
+                <button class="btn block-btn roll-btn disabled">🎲 roll die</button>
+                <button class="btn block-btn hold-btn disabled"> ⬇️ hold</button>
+            </div>
+
+            <div class="overlay"></div>
+            <div class="menu">
+                <h1> Menu </h1>
+                <div class="menu-content-conateiner">
+                    <div class="menu-btns">
+                        <button class="btn btn-menu btn-menu-1 btn-set-player 
+              " data-btn="1"> set players </button>
+
+                        <button class="btn btn-menu
+                btn-menu-2  btn-set-score" data-btn="2"> set finish score </button>
+
+                        <button class="btn btn-menu btn-menu-3 btn-history" data-btn="3">game history </button>
+
+                        <button class="btn btn-menu btn-menu-4
+                btn-help" data-btn="4">help ? </button>
+
+                    </div>
+                    <div class="menu-content">
+                        <div class="setPlayers menu-content-div menu-content-div-1 ">
+                            <h1 class="content-header">set players</h1>
+                            <div class="inputContainer">
+                                <input type="text" class="player-1-input input menu-input" placeholder="player1" />
+                                <label class="label" for="">player one</label>
+                            </div>
+
+                            <div class="inputContainer">
+                                <input type="text" class="player-2-input input menu-input" placeholder="player1" />
+                                <label class="label" for="">player two</label>
+                            </div>
+                            <button class="set">Set Players</button>
+                        </div>
+                        <div class="setScore menu-content-div menu-content-div-2">
+                            <h1 class="content-header">set finish score</h1>
+                            <div class="inputContainer">
+                                <input type="text" class="score-input input menu-input" placeholder=" " />
+                                <label class="label" for="">Enter Score</label>
+                            </div>
+                            <button class="set">Set Players</button>
+                        </div>
+                        <div class="menu-content-div menu-content-div-3  game-history">
+
+
+                            <button class="btn btn-menu btn-clear">
+                            clear history 
+                        </button>
+
+
+                        </div>
+                        <div class="setPlayers menu-content-div menu-content-div-4 ">
+                            <h1>coming soon</h1>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>Developed by <span>NATTY-7</span> thought by Jonas </footer>
+
+
+
+    <script src="pigGame.js"></script>
+</body>
+
+</html>
